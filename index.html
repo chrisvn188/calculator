@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator - The Odin Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculator-container">
         <div class="calculator-screen-container">
-            <div class="calculating-area"></div>
-            <div class="result-area">0</div>
+            <div class="calculating-area">1 + 1 =</div>
+            <div class="result-area">2</div>
         </div>
         <div class="btns-container">
-            <div class="calc-btn">E</div>
-            <div class="calc-btn">CLEAR</div>
-            <div class="calc-btn featured">P</div>
-            <div class="calc-btn">7</div>
-            <div class="calc-btn">8</div>
-            <div class="calc-btn">9</div>
-            <div class="calc-btn">&plus;</div>
-            <div class="calc-btn">4</div>
-            <div class="calc-btn">5</div>
-            <div class="calc-btn">6</div>
-            <div class="calc-btn">&minus;</div>
-            <div class="calc-btn">1</div>
-            <div class="calc-btn">2</div>
-            <div class="calc-btn">3</div>
-            <div class="calc-btn">&times;</div>
-            <div class="calc-btn">0</div>
-            <div class="calc-btn">&dot;</div>
-            <div class="calc-btn">&equals;</div>
-            <div class="calc-btn">&divide;</div>
+            <button class="calc-btn featured" id="eraser-btn">E</button>
+            <button class="calc-btn span-2 featured" id="clear-btn">CLEAR</button>
+            <button class="calc-btn featured" id="power-btn">P</button>
+            <button class="calc-btn" data-number="7">7</button>
+            <button class="calc-btn" data-number="8">8</button>
+            <button class="calc-btn" data-number="9">9</button>
+            <button class="calc-btn" data-operator="plus">&plus;</button>
+            <button class="calc-btn" data-number="4">4</button>
+            <button class="calc-btn" data-number="5">5</button>
+            <button class="calc-btn" data-number="6">6</button>
+            <button class="calc-btn" data-operator="minus">&minus;</button>
+            <button class="calc-btn" data-number="1">1</button>
+            <button class="calc-btn" data-number="2">2</button>
+            <button class="calc-btn" data-number="3">3</button>
+            <button class="calc-btn" data-operator="multiply">&times;</button>
+            <button class="calc-btn" data-number="0">0</button>
+            <button class="calc-btn" id="decimal-point-btn">.</button>
+            <button class="calc-btn" id="equal-btn">&equals;</button>
+            <button class="calc-btn" data-operator="divide">&divide;</button>
         </div>
     </div>
 </body>
