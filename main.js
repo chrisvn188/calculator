@@ -4,10 +4,11 @@ let currentOperator = null;
 let shouldResetScreen = false;
 
 // get UI elements
-const lastOperatingScreen = document.querySelector("#calculating-area");
-const currentOperatingScreen = document.querySelector("#result-area");
 const clearBtn = document.querySelector("#clear-btn");
 const eraserBtn = document.querySelector("#eraser-btn");
+const percentageBtn = document.querySelector("#percentage-btn");
+const lastDisplayingScreen = document.querySelector("#calculating-area");
+const currentDisplayingScreen = document.querySelector("#result-area");
 const numberBtns = document.querySelectorAll(`button[data-number]`);
 const operatorBtns = document.querySelectorAll(`button[data-operator]`);
 const equalBtn = document.querySelector("#equal-btn");

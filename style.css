@@ -57,11 +57,11 @@ body {
     height: 7em;
 }
 
-.calculating-area{
+.last-displaying-screen{
     min-height: 1.2em;
 }
 
-.result-area{
+.current-displaying-screen{
     font-size: 2.2rem;
     margin-top: .5em;
 }
