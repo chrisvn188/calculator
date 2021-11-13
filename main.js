@@ -4,8 +4,8 @@ let currentOperator = null;
 let shouldResetScreen = false;
 
 // get UI elements
-const calculatingArea = document.querySelector("#calculating-area");
-const resultArea = document.querySelector("#result-area");
+const lastOperatingScreen = document.querySelector("#calculating-area");
+const currentOperatingScreen = document.querySelector("#result-area");
 const clearBtn = document.querySelector("#clear-btn");
 const eraserBtn = document.querySelector("#eraser-btn");
 const numberBtns = document.querySelectorAll(`button[data-number]`);
@@ -51,3 +51,4 @@ function operate(operation, firstNum, secondNum) {
       return null;
   }
 }
+
