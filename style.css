@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
-  --background-color: #261C2C;
+  /* --background-color: #261C2C;
   --calculator-background-color: #EDEDED;
-  --btns-background-color: #3A4750;
-  --featured-btn-bg-color: #e46363;
   --calculator-screen-bg-color: #c4c4c4;
-  --light-gray: #eeeeee;
+  --number-btns-background-color: #3A4750;
+  --featured-btn-bg-color: #e46363;
+  --light-gray: #eeeeee; */
+  --main-bg-cl:#261C2C;
+  --calculator-bg-cl:#EDEDED;
+  --numbered-btns-bg-cl:#3A4750;
+  --btn-text-cl:#EEEEEE;
+  --featured-1-bg-cl:#e46363;
+  --feature-2-bg-cl:#137114;
+  --screen-bg-cl:#C9CCD5;
+  --screen-text-cl:#351F39;
 
   /* fixing global box-sizing */
   box-sizing: border-box;
@@ -19,7 +27,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--main-bg-cl);
     font-family: Roboto, monospace;
     font-weight: 400;
     margin: 0;
@@ -32,7 +40,7 @@ body {
 }
 
 .calculator-container{
-    background-color: var(--calculator-background-color);
+    background-color: var(--calculator-bg-cl);
     border-radius: 10px;
     padding:2.5em 2em;
     display: flex;
@@ -41,10 +49,10 @@ body {
 }
 
 .calculator-screen-container{
-    background-color: var(--calculator-screen-bg-color);
+    background-color: var(--screen-bg-cl);
     border-radius: 5px;
     padding: 1em;
-    color:var(--btns-background-color);
+    color:var(--screen-text-cl);
     text-align: right;
     height: 7em;
 }
@@ -69,8 +77,8 @@ body {
 .btn{
     border:none;
     border-radius: 3px;
-    background-color: var(--btns-background-color);
-    color:var(--light-gray);
+    background-color: var(--numbered-btns-bg-cl);
+    color:var(--btn-text-cl);
     font-family: inherit;
     font-size: 1.2rem;
     padding:0;
@@ -86,12 +94,11 @@ body {
     grid-column: span 2;
 }
 
-.featured{
-    background-color: var(--featured-btn-bg-color);
-    color: var(--calculator-background-color);
+.featured-1{
+    background-color: var(--featured-1-bg-cl);
     font-weight: 700;
 }
 
 .featured-2{
-    background-color: rgb(66, 160, 66);
+    background-color: var(--feature-2-bg-cl);
 }

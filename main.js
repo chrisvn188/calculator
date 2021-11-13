@@ -30,6 +30,7 @@ function divide(a, b) {
   return a / b;
 }
 
+
 // operate calculation
 function operate(operation, firstNum, secondNum) {
   let firstNumber = Number(firstNum);
@@ -38,7 +39,7 @@ function operate(operation, firstNum, secondNum) {
     case "+":
       return add(firstNumber, secondNumber);
       break;
-    case "-":
+    case "−":
       return subtract(firstNumber, secondNumber);
       break;
     case "×": //option 00d7
