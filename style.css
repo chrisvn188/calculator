@@ -46,10 +46,11 @@ body {
     padding: 1em;
     color:var(--btns-background-color);
     text-align: right;
+    height: 7em;
 }
 
 .calculating-area{
-    min-height: 1em;
+    min-height: 1.2em;
 }
 
 .result-area{
@@ -89,5 +90,4 @@ body {
     background-color: var(--featured-btn-bg-color);
     color: var(--calculator-background-color);
     font-weight: 700;
-    transition: all .3s;
 }
