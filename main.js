@@ -4,7 +4,6 @@ let secondOperand = "";
 let currentOperator = null;
 let operatorBtnsClicked = false;
 let equalBtnClicked = false;
-let one = 0;
 const MAX_NUM_LENGTH = 9;
 
 // DOM ELEMENTS
@@ -105,10 +104,6 @@ function setOperationAndCalculate(operator) {
   operatorBtnsClicked = true;
 }
 
-function appendDecimalPointToNumber(){
-
-}
-
 function evaluateExpression() {
   if (currentOperator === null) return;
   secondOperand = currentDisplayingScreen.textContent;
@@ -122,7 +117,8 @@ function evaluateExpression() {
 
 function appendDecimalPointToNumber(point) {
   if(currentDisplayingScreen.textContent.indexOf(point) == -1){
-    currentDisplayingScreen.textContent = currentDisplayingScreen.textContent + point;
+    currentDisplayingScreen.textContent += point;
+    equalBtnClicked = false;
   }
 }
 
