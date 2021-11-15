@@ -71,8 +71,8 @@ function clear() {
 }
 
 function erase() {
-  currentDisplayingScreen.textContent =
-    currentDisplayingScreen.textContent.slice(0, -1);
+  currentDisplayingScreen.textContent = currentDisplayingScreen.textContent.slice(0, -1);
+  equalBtnClicked = false;
 }
 
 // this function will be called whenever numbered btns clicked
